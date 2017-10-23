@@ -5,17 +5,19 @@
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
-<node nodetype='place' id ='3' xposition='262' yposition='46' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='3' xposition='246' yposition='46' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
-<attribute name='name' xposition='282' yposition='41'>Outside_A</attribute>
+<attribute name='name' xposition='266' yposition='41'>Outside_A</attribute>
 </attributes>
 </node>
-<node nodetype='place' id ='4' xposition='262' yposition='182' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='place' id ='4' xposition='246' yposition='182' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='266' yposition='177'>Wait_A</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='5' xposition='358' yposition='182' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='378' yposition='177'>Counter_A</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='6' xposition='515' yposition='260' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -25,10 +27,12 @@
 </node>
 <node nodetype='place' id ='7' xposition='515' yposition='46' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='535' yposition='41'>Controller</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='8' xposition='808' yposition='168' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='828' yposition='163'>Wait_B</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='9' xposition='808' yposition='46' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -38,50 +42,62 @@
 </node>
 <node nodetype='place' id ='10' xposition='682' yposition='182' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='702' yposition='177'>Counter_B</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='11' xposition='444' yposition='366' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='464' yposition='361'>Left_A</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='12' xposition='588' yposition='366' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='608' yposition='361'>Left_B</attribute>
 </attributes>
 </node>
-<node nodetype='transition' id ='13' xposition='257' yposition='124' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<node nodetype='transition' id ='13' xposition='241' yposition='124' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='261' yposition='119'>Dem_A</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='14' xposition='353' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='373' yposition='259'>Nest_A</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='15' xposition='353' yposition='124' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='373' yposition='119'>First_A</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='16' xposition='439' yposition='305' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='459' yposition='300'>Leave_A</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='17' xposition='583' yposition='305' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='603' yposition='300'>Leave_B</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='18' xposition='803' yposition='118' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='823' yposition='113'>Dem_B</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='19' xposition='677' yposition='264' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='697' yposition='259'>Next_B</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='20' xposition='677' yposition='124' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='697' yposition='119'>First_B</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='21' xposition='510' yposition='124' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='name' xposition='530' yposition='119'>Empty</attribute>
 </attributes>
 </node>
 </nodes>
@@ -189,7 +205,7 @@
 </attributes>
 </arc>
 <arc arctype='arc' id='47' startid='4' endid='14' color='#000000' curved='true'>
-<pi xposition='269' yposition='267'/>
+<pi xposition='252' yposition='268'/>
 <attributes>
 <attribute name='valuation' xposition='307' yposition='228'>1</attribute>
 </attributes>
