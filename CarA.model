@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='version' xposition='0' yposition='0'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='3' xposition='65' yposition='54' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='85' yposition='49'>Att_extA</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='4' xposition='60' yposition='148' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='88' yposition='143'>Dem_A</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='5' xposition='65' yposition='216' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='85' yposition='211'>Att_Pont_A</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='9' xposition='60' yposition='307' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='80' yposition='302'>Enter_A</attribute>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='7' startid='3' endid='4' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='62' yposition='101'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='8' startid='4' endid='5' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='62' yposition='182'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='10' startid='5' endid='9' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='62' yposition='261'>1</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>
