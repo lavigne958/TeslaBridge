@@ -219,6 +219,16 @@
 <attribute name='valuation' xposition='356' yposition='158'>1</attribute>
 </attributes>
 </arc>
+<arc arctype='arc' id='74' startid='25' endid='15' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='606' yposition='169'>1</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='75' startid='24' endid='14' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='318' yposition='171'>1</attribute>
+</attributes>
+</arc>
 <arc arctype='arc' id='34' startid='12' endid='3' color='#000000' curved='true'>
 <attributes>
 <attribute name='valuation' xposition='765' yposition='324'>1</attribute>
