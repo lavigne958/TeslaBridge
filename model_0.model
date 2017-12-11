@@ -12,12 +12,6 @@ pos, order in Counter;</attribute>
 <attribute name='version' xposition='0' yposition='0'>0,0</attribute>
 </attributes>
 <nodes>
-<node nodetype='place' id ='3' xposition='236' yposition='59' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='marking' xposition='256' yposition='84'>&lt;Voiture.all&gt;</attribute>
-<attribute name='domain' xposition='256' yposition='69'>Voiture</attribute>
-</attributes>
-</node>
 <node nodetype='transition' id ='4' xposition='548' yposition='166' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='guard' xposition='512' yposition='178'>[ pos = Counter.1]</attribute>
@@ -26,21 +20,15 @@ pos, order in Counter;</attribute>
 </node>
 <node nodetype='place' id ='5' xposition='235' yposition='183' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='marking' xposition='165' yposition='209'>2*&lt;Voiture.0&gt;</attribute>
 <attribute name='domain' xposition='184' yposition='193'>Voiture</attribute>
-<attribute name='name' xposition='184' yposition='178'>end</attribute>
+<attribute name='name' xposition='184' yposition='178'>VAA</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='6' xposition='548' yposition='81' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
 <attribute name='guard' xposition='512' yposition='92'>[pos = Counter.1]</attribute>
 <attribute name='name' xposition='541' yposition='58'>next_A</attribute>
-</attributes>
-</node>
-<node nodetype='place' id ='7' xposition='1003' yposition='59' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='marking' xposition='1023' yposition='84'>&lt;Voiture.all&gt;</attribute>
-<attribute name='domain' xposition='1023' yposition='69'>Voiture</attribute>
-<attribute name='name' xposition='1023' yposition='54'>VAB</attribute>
 </attributes>
 </node>
 <node nodetype='transition' id ='8' xposition='349' yposition='436' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -51,18 +39,9 @@ pos, order in Counter;</attribute>
 </node>
 <node nodetype='place' id ='9' xposition='1003' yposition='183' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
 <attributes>
+<attribute name='marking' xposition='1023' yposition='208'>2*&lt;Voiture.1&gt;</attribute>
 <attribute name='domain' xposition='1023' yposition='193'>Voiture</attribute>
 <attribute name='name' xposition='1023' yposition='178'>endb</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='10' xposition='230' yposition='126' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='161' yposition='121'>va_approach</attribute>
-</attributes>
-</node>
-<node nodetype='transition' id ='11' xposition='998' yposition='126' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
-<attributes>
-<attribute name='name' xposition='1018' yposition='121'>vb_approch</attribute>
 </attributes>
 </node>
 <node nodetype='place' id ='12' xposition='553' yposition='606' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
@@ -264,26 +243,6 @@ pos, order in Counter;</attribute>
 <pi xposition='377' yposition='84'/>
 <attributes>
 <attribute name='valuation' xposition='411' yposition='76'>&lt;Counter.0&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='45' startid='3' endid='10' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='237' yposition='92'>&lt;v&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='46' startid='10' endid='5' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='236' yposition='154'>&lt;v&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='47' startid='7' endid='11' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='1003' yposition='92'>&lt;v&gt;</attribute>
-</attributes>
-</arc>
-<arc arctype='arc' id='48' startid='11' endid='9' color='#000000' curved='true'>
-<attributes>
-<attribute name='valuation' xposition='1004' yposition='153'>&lt;v&gt;</attribute>
 </attributes>
 </arc>
 <arc arctype='arc' id='49' startid='5' endid='17' color='#000000' curved='true'>
