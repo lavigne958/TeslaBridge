@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://coloane.lip6.fr/resources/schemas/model.xsd' formalism='Colored Petri Net' xposition='0' yposition='0'>
+<attributes>
+<attribute name='note' xposition='0' yposition='0'>Designed with Coloane</attribute>
+<attribute name='declaration' xposition='0' yposition='0'>Class Voiture is 1..1;
+Type is [a, b];
+
+Domain VoitPos is &lt;Voiture, Type&gt;
+
+var v in Voiture;
+t in Type;</attribute>
+<attribute name='version' xposition='0' yposition='0'>0,0</attribute>
+</attributes>
+<nodes>
+<node nodetype='place' id ='3' xposition='230' yposition='42' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='marking' xposition='250' yposition='67'>&lt;Voiture.all, Type.all&gt;</attribute>
+<attribute name='domain' xposition='250' yposition='52'>VoitPos</attribute>
+<attribute name='name' xposition='250' yposition='37'>Star</attribute>
+</attributes>
+</node>
+<node nodetype='place' id ='4' xposition='231' yposition='223' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='domain' xposition='251' yposition='233'>VoitPos</attribute>
+<attribute name='name' xposition='251' yposition='218'>Bridge</attribute>
+</attributes>
+</node>
+<node nodetype='transition' id ='5' xposition='225' yposition='127' scale='100' interface='false' alt='0' foreground='#000000' background='#ffffff'>
+<attributes>
+<attribute name='name' xposition='245' yposition='122'>dem</attribute>
+</attributes>
+</node>
+</nodes>
+<arcs>
+<arc arctype='arc' id='6' startid='3' endid='5' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='227' yposition='84'>&lt;v, t&gt;</attribute>
+</attributes>
+</arc>
+<arc arctype='arc' id='7' startid='5' endid='4' color='#000000' curved='true'>
+<attributes>
+<attribute name='valuation' xposition='228' yposition='175'>&lt;v, t&gt;</attribute>
+</attributes>
+</arc>
+</arcs>
+<stickys>
+</stickys>
+</model>

@@ -1,0 +1,21 @@
+\subsection{Controleur} %
+
+Voici le modèle du controleur:\\
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.7]{ctrl.jpeg}
+\end{figure}
+
+\item 
+\newpage
+
+\subsection{Modèle complet} %
+
+Après assemblage des différent composant, on arrive donc au modèle complet suivant:\\
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/full-model.jpeg}
+\end{figure}
+
+On peut remarquer l'ajout d'une position \texttt{empty} au centre (dans le controleur), cela permet d'initialiser le passage de l'un ou l'autre des cotés, la transition \texttt{leaveLast} renvoit un jeton dans cette place pour réinitialiser le système. La transition \texttt{authVAA} nécessite un jeton dans \texttt{waitVAA}, elle représente l'autorisation du contrôleur. Enfin les voitures rentrent sur le pont via la transition \texttt{pass}.

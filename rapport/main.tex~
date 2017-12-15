@@ -1,0 +1,23 @@
+\documentclass[]{article}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+%\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+\usepackage{graphicx}
+%
+\usepackage{makeidx}
+\usepackage{multicol}        % used for the two-column index
+%\usepackage[bottom]{footmisc}
+
+\begin{document}
+\include{title}
+\include{sections/rappel}
+
+\end{document}
