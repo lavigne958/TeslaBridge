@@ -1,2 +1,10 @@
 P1 OK: query node card(Bridge :(field[1] == a)) == 1 and card(Bridge :(field[1] == b)) == 1 ===> renvoie 0 path donc n'existe pas donc on est safe.
-P2 ?? : query node AF(EG(card(Star) == card(Outside)))
+P2 ?? : query node implies (
+   Start == <.1,a.> + <.1, b.> + <.2, a.> + <.2, b.>,
+   AF(
+	EG(
+		Outside == <.1,a.> + <.1, b.> + <.2, a.> + <.2, b.>
+	)
+   )
+)
+
